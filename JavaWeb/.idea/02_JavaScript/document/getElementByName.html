@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="text/javascript">
+        function checkall() {
+            //document.getElementsByName是根据指定name属性查询返回多个标签对象的值
+            var hobbies = document.getElementsByName("hobby");
+            for (var i=0;i<hobbies.length;i++){
+                hobbies[i].checked=true;
+            }
+        }
+        function checknone() {
+            var hobbies = document.getElementsByName("hobby");
+            for (var i=0;i<hobbies.length;i++){
+                hobbies[i].checked=false;
+            }
+        }
+        function checkReverse() {
+            var hobbies = document.getElementsByName("hobby");
+            for (var i=0;i<hobbies.length;i++){
+                hobbies[i].checked=!hobbies[i].checked;
+            }
+        }
+    </script>
+</head>
+<body>
+    兴趣爱好：
+    <input type="checkbox" name="hobby" id="cpp">c++
+    <input type="checkbox" name="hobby" id="java">java
+    <input type="checkbox" name="hobby" id="js">javascript
+    <br/>
+    <button onclick="checkall()">全选</button>
+    <button onclick="checknone()">全不选</button>
+    <button onclick="checkReverse()">反选</button>
+</body>
+</html>

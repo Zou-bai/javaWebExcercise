@@ -1,0 +1,105 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: url("../img/login.png") no-repeat;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#login-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 270px;
+    height: 270px;
+    margin: 0 auto;
+    background: rgba(38,80,160,.75);
+    padding: 20px 50px;
+    border-top: 2px solid rgb(0,100,255);
+    border-left: 2px solid rgb(0,100,255);
+    border-right: 2px solid rgb(0,100,255);
+    border-bottom: 2px solid rgb(0,100,255);
+}
+
+#login-box h2 {
+    color: white;
+
+}
+
+#login-box .form .item {
+    margin-top: 15px;
+}
+
+#login-box .form .item input {
+    color: rgba(255,255,255,0.9);
+    font-size: 18px;
+    width: 210px;
+    height: 35px;
+    background: #ffffff03;
+    border: 1px solid rgba(255,255,255,.5);
+    border-radius: 5px;
+    transition: .2s;
+    outline: none;
+    padding: 0 10px;
+}
+
+#login-box .form .item input:focus{
+    border: 2px solid rgba(255,255,255,.8);
+}
+
+#login-box .form .item i {
+    font-size: 18px;
+    color: white;
+}
+
+#login-box .btn-box{
+    padding-top: 10px;
+    width: 260px;
+}
+
+#login-box .btn-box label {
+    font-size: 16px;
+}
+
+#login-box .btn-box .forgot-pass{
+    margin-left: 90px;
+    text-decoration: none;
+    color: rgba(0,0,255,.9);
+    transition: .2s;
+    text-align: right;
+}
+
+#login-box .btn-box a:hover{
+    color: rgba(0,150,255,.8);
+}
+
+#login-box .btn-sub{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: start;
+    margin-top: 20px;
+}
+
+#login-box .btn-sub button {
+    border: 1px solid rgba(0,100,255,.8);
+    background: rgba(0,100,255,.8);
+    width: 250px;
+    height: 30px;
+    font-size: 20px;
+    font-weight: 700;
+    color: white;
+    border-radius: 5px;
+}
+
+#message-box {
+    color: white;
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+    text-align: center;
+}

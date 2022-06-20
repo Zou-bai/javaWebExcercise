@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="text/javascript">
+        function fun(a) {
+            alert(arguments.length);
+
+            alert(arguments[0]);
+            alert(arguments[1]);
+            alert(arguments[2]);
+            alert("无参函数fun()");
+
+            alert("a="+a);
+        }
+        fun(1,"sfd",true);
+
+        function sum(num1,num2) {
+            var result=0;
+            for (var i=0;i<arguments.length;i++) {
+                if (typeof (arguments[i])=="number"){
+                    result += arguments[i];
+                }
+            }
+            return result;
+        }alert(sum(1,2,3,4,"rs",5));
+    </script>
+</head>
+<body>
+
+</body>
+</html>
